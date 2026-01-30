@@ -1,7 +1,7 @@
 #name
 name: CI Pipeline
 
- on : push
+ on: push
 
  jobs:
   build:
