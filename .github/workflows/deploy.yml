@@ -1,15 +1,17 @@
-#name
+
+# name
 name: CI Pipeline
 
- on: push
+on: push
 
- jobs:
+jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-     -name: Checkout code
-     uses : actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-     -name: Run echo
-     run: echo "hello github actions"
+      - name: Run echo
+        run: echo "hello github actions"
+
